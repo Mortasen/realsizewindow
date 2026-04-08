@@ -12,7 +12,7 @@ class MainWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		self.setWindowTitle("Real Size Window")
-		self.setMinimumSize(450, 300)
+		self.setMinimumSize(50, 50)
 		
 		# Main Widget and layout
 		self.central_widget = QWidget()
@@ -20,11 +20,13 @@ class MainWindow(QMainWindow):
 		self.main_layout = QVBoxLayout(self.central_widget)
 		self.main_layout.setContentsMargins(0, 0, 0, 0)
 		self.main_layout.setSpacing(0)
+		self.main_layout.setSizeConstraint(QVBoxLayout.SizeConstraint.SetNoConstraint)
 		
 		# Grid for Rulers and Content
 		self.grid = QGridLayout()
 		self.grid.setSpacing(0)
 		self.grid.setContentsMargins(0, 0, 0, 0)
+		self.grid.setSizeConstraint(QGridLayout.SizeConstraint.SetNoConstraint)
 		self.main_layout.addLayout(self.grid)
 		
 		# Rulers and Corners
@@ -42,8 +44,10 @@ class MainWindow(QMainWindow):
 		self.content_area = QFrame()
 		self.content_area.setFrameStyle(QFrame.Shape.StyledPanel | QFrame.Shadow.Sunken)
 		self.content_layout = QVBoxLayout(self.content_area)
+		self.content_layout.setSizeConstraint(QVBoxLayout.SizeConstraint.SetNoConstraint)
 		
 		self.center_container = QWidget()
+		self.center_container.setMinimumSize(0, 0)
 		self.center_grid = QGridLayout(self.center_container)
 		self.center_grid.setSpacing(10)
 		self.center_grid.setContentsMargins(20, 20, 20, 20)
