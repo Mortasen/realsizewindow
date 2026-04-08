@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import QWidget
 from PyQt6.QtCore import Qt, QRect
 from PyQt6.QtGui import QPainter, QPen, QFont, QPalette, QColor
-from src.config import config
+from realsizewindow.config import config
 from loguru import logger
 
 class BaseRuler(QWidget):

@@ -1,6 +1,6 @@
 import os
 import json
-from src.config import Config
+from realsizewindow.config import Config
 
 def test_config_save_load():
 	config = Config()

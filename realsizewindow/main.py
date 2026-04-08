@@ -1,7 +1,7 @@
 import sys
 from PyQt6.QtWidgets import QApplication
-from src.config import config
-from src.gui.main_window import MainWindow
+from realsizewindow.config import config
+from realsizewindow.gui.main_window import MainWindow
 from loguru import logger
 
 def main():

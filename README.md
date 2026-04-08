@@ -34,7 +34,16 @@ This project uses `uv` for dependency management.
 Run the application using:
 
 ```bash
-uv run python3.14 -m src.main
+uv run realsizewindow
+```
+
+### Installation via pipx
+
+You can install the application globally and run it as a standalone command:
+
+```bash
+pipx install git+https://github.com/Mortasen/realsizewindow.git
+realsizewindow
 ```
 
 ### Calibration

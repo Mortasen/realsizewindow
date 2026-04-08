@@ -3,9 +3,9 @@ from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
 								QGridLayout, QFrame, QSpacerItem, QSizePolicy)
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QIcon
-from src.config import config
-from src.gui.rulers import RulerWidget, CornerWidget
-from src.gui.calibration_dialog import CalibrationDialog
+from realsizewindow.config import config
+from realsizewindow.gui.rulers import RulerWidget, CornerWidget
+from realsizewindow.gui.calibration_dialog import CalibrationDialog
 from loguru import logger
 
 class MainWindow(QMainWindow):
